@@ -12,7 +12,8 @@ int main(int argc, char *argv[])
         640, 320, SDL_WINDOW_SHOWN);
     printf("Hello, World!\n");
 
-
+    while (1)
+    {}
     SDL_DestroyWindow(window);
     return 0;
 }
