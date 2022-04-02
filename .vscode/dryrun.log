@@ -1,0 +1,5 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory '/workspaces/chip8'
+gcc -g -I ./include ./src/main.c -lSDL2main -lSDL2  -o ./bin/main
+make: Leaving directory '/workspaces/chip8'
+ 

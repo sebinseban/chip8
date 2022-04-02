@@ -1,0 +1,285 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 4.2.1
+ 
+# Built for x86_64-pc-linux-gnu
+ 
+# Copyright (C) 1988-2016 Free Software Foundation, Inc.
+ 
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+ 
+# This is free software: you are free to change and redistribute it.
+ 
+# There is NO WARRANTY, to the extent permitted by law.
+ 
+
+ 
+# Make data base, printed on Sat Apr  2 14:48:50 2022
+ 
+
+# Variables
+ 
+
+ 
+# automatic
+ 
+<D = $(patsubst %/,%,$(dir $<))
+ 
+# automatic
+ 
+?F = $(notdir $?)
+ 
+# default
+ 
+.SHELLFLAGS := -c
+ 
+# environment
+ 
+VSCODE_AGENT_FOLDER = /home/ubuntu/.vscode-remote
+ 
+# environment
+ 
+VSCODE_LOG_NATIVE = false
+ 
+# automatic
+ 
+?D = $(patsubst %/,%,$(dir $?))
+ 
+# makefile (from 'Makefile', line 1)
+ 
+INCLUDES = -I ./include
+ 
+# automatic
+ 
+@D = $(patsubst %/,%,$(dir $@))
+ 
+# automatic
+ 
+@F = $(notdir $@)
+ 
+# makefile
+ 
+CURDIR := /workspaces/chip8
+ 
+# makefile
+ 
+SHELL = /bin/sh
+ 
+# environment
+ 
+VSCODE_NLS_CONFIG = {"locale":"en-US","availableLanguages":{}}
+ 
+# environment
+ 
+GITHUB_GRAPHQL_URL = https://api.github.com/graphql
+ 
+# environment
+ 
+GITHUB_TOKEN = ghu_qlUZGYLXGuG6etTV5qBKwobcTGoygA4SMA1s
+ 
+# makefile (from 'Makefile', line 1)
+ 
+MAKEFILE_LIST :=  Makefile
+ 
+# 'override' directive
+ 
+GNUMAKEFLAGS := 
+ 
+# environment
+ 
+VSCODE_VERBOSE_LOGGING = true
+ 
+# environment
+VSCODE_CWD = /vscode/bin/linux-x64/e18005f0f1b33c29e81d732535d8c0e47cafb0b5
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# environment
+PATH = /vscode/bin/linux-x64/e18005f0f1b33c29e81d732535d8c0e47cafb0b5/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# environment
+CLOUDENV_ENVIRONMENT_ID = 313bf51d-1b96-42e6-a647-fd85ec39c8d6
+# environment
+GITHUB_SERVER_URL = https://github.com
+# environment
+VSCODE_LOG_STACK = false
+# environment
+VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-4f5e0a5e-4d66-4a6b-9bc4-7eaeb087ed25.sock
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
+# environment
+CODESPACES = true
+# environment
+CODESPACE_NAME = sebinseban-code50-32323262-g6vqvr9jfrx4
+# automatic
+%F = $(notdir $%)
+# environment
+DISPLAY = :0
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+PWD = /workspaces/chip8
+# default
+.LOADED := 
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /home/ubuntu
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# automatic
++F = $(notdir $+)
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+HOSTNAME = codespaces_d4c650
+# environment
+MAKELEVEL := 0
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# default
+MAKE_VERSION := 4.2.1
+# environment
+GITHUB_CODESPACE_TOKEN = AHWTNPUOQ2CKPJJNGBE7GJLCJEBH5ANCNFSM4ABM7YIA
+# makefile
+.DEFAULT_GOAL := all
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# default
+MAKE_COMMAND := make
+# default
+.VARIABLES := 
+# automatic
+*F = $(notdir $*)
+# makefile
+MAKEFLAGS = pqrR
+# environment
+MFLAGS = -pqrR
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+BROWSER = /vscode/bin/linux-x64/e18005f0f1b33c29e81d732535d8c0e47cafb0b5/bin/helpers/browser.sh
+# environment
+RepositoryName = 32323262
+# environment
+GITHUB_USER = sebinseban
+# default
+MAKEFILES := 
+# automatic
+<F = $(notdir $<)
+# environment
+WORKDIR = /home/ubuntu
+# environment
+GITHUB_API_URL = https://api.github.com
+# environment
+LC_ALL = C
+# environment
+GIT_COMMITTER_NAME = GitHub
+# environment
+INTERNAL_VSCS_TARGET_URL = https://eastus.online.visualstudio.com
+# environment
+GITHUB_REPOSITORY = code50/32323262
+# automatic
+^F = $(notdir $^)
+# default
+SUFFIXES := 
+# makefile (from 'Makefile', line 2)
+FLAGS = -g
+# environment
+GIT_COMMITTER_EMAIL = noreply@github.com
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# default
+.RECIPEPREFIX := 
+# environment
+LANG = C
+# environment
+VSCODE_EXTHOST_WILL_SEND_SOCKET = true
+# environment
+ContainerVersion = 12
+# variable set hash-table stats:
+# Load=73/1024=7%, Rehash=0, Collisions=5/103=5%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 1792, inode 1585305): 8 files, no impossibilities.
+
+# 8 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+all:
+#  Command line target.
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: ''
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := all
+# automatic
+# % := 
+# automatic
+# * := 
+# automatic
+# + := 
+# automatic
+# | := 
+# automatic
+# < := 
+# automatic
+# ^ := 
+# automatic
+# ? := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/13=8%
+#  recipe to execute (from 'Makefile', line 4):
+	gcc ${FLAGS} ${INCLUDES} ./src/main.c -lSDL2main -lSDL2  -o ./bin/main
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-04-02 14:48:28.209979855
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=4/1024=0%, Rehash=0, Collisions=0/16=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 13 / storage = 99 B / avg = 7 B
+# current buf: size = 8162 B / used = 99 B / count = 13 / avg = 7 B
+
+# strcache performance: lookups = 20 / hit rate = 35%
+# hash-table stats:
+# Load=13/8192=0%, Rehash=0, Collisions=1/20=5%
+# Finished Make data base on Sat Apr  2 14:48:50 2022
+
+ 
