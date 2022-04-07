@@ -1,6 +1,8 @@
 // build a chip 8 emulator in c
 #include <stdio.h>
 #include <SDL2/SDL.h>
+#include "chip8.h"
+
 
 int main(int argc, char **argv)
 {
@@ -9,10 +11,11 @@ int main(int argc, char **argv)
     //windowpos can be any value, undefined set its to default value
 
     SDL_Window* window = SDL_CreateWindow(
-        "Chip 8 Window",
+        EMULATOR_WINDOW_TITLE,
         SDL_WINDOWPOS_UNDEFINED,
         SDL_WINDOWPOS_UNDEFINED,
-        640, 320, SDL_WINDOW_SHOWN);
+        CHIP8_WIDTH * CHIP8_WINDOW_MULTIPLIER ,
+        CHIP8_HEIGHT * CHIP8_WINDOW_MULTIPLIER , SDL_WINDOW_SHOWN);
 
     // now we will create a renderer which will help us to draw pixel to the window
     SDL_Renderer* renderer = SDL_CreateRenderer(window, -1, SDL_TEXTUREACCESS_TARGET );
