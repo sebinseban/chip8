@@ -20,6 +20,15 @@ int main(int argc, char **argv)
     //we will break out of while when we have a quit event
     while (1)
     {
+        SDL_Event event;
+        while (SDL_PollEvent(&event))
+        {
+            if (event.type == SDL_QUIT)
+            {
+                goto out;
+            }
+        }
+
         //first 0 -> red, second 0 -> green, third 0 -> blue  fourth 0 -> alpha (transparency, black)
         //it will set the renderer to colour black
         //all render functions mainly depend on setrenderdrawcolor
@@ -40,11 +49,19 @@ int main(int argc, char **argv)
         r.y = 0;
         r.w = 40;
         r.h = 40;
-        SDL_RenderDrawRect(renderer, &r);         //pass in the renderer and the rectangles address, it will draw the rectangle
+        //SDL_RenderDrawRect(renderer, &r);         //pass in the renderer and the rectangles address, it will draw the rectangle
+        //fill the entire rectangle with white
+        SDL_RenderFillRect(renderer, &r);         //pass in the renderer and the rectangles address, it will draw the rectangle
+
         SDL_RenderPresent(renderer);              //you need to present the changes
+
     }
+    /* in the beginning the sdl window popped up will not be performing ok, its because we are not properly handling the sdl events
+    but we will take care of it soon */
 
     //pass in the window to be destroyed
+
+out:
     SDL_DestroyWindow(window);
     return 0;
 }
