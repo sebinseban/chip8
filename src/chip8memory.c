@@ -1,7 +1,16 @@
 #include "chip8memory.h"
+#include <assert.h>
+
+static void chip8_is_memory_in_bounds(int index)
+{
+    //checks if accessing valid memory only
+    //if not , will throw an insertion error and kill the program
+    assert(index >= 0 && index < CHIP8_MEMORY_SIZE);
+}
 
 void chip8_memory_set(struct chip8_memory* memory, int index, unsigned char val)
 {
+    chip8_is_memory_in_bounds(index);
     memory->memory[index] = val;
 
 }
@@ -10,5 +19,6 @@ void chip8_memory_set(struct chip8_memory* memory, int index, unsigned char val)
 
 unsigned char chip8_memory_get(struct chip8_memory* memory, int index)
 {
+    chip8_is_memory_in_bounds(index);
     return memory->memory[index];
 }

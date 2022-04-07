@@ -7,7 +7,7 @@
 int main(int argc, char **argv)
 {
     struct chip8 chip8;
-    chip8_memory_set(&chip8.memory, 50, 'Z');      // . because its on the stack, not heap
+    chip8_memory_set(&chip8.memory, 0x400 , 'Z');      // . because its on the stack, not heap
     printf("%c\n", chip8_memory_get(&chip8.memory, 50));
 
     SDL_Init(SDL_INIT_EVERYTHING);       // initialize SDL that has everything to do with sdl
